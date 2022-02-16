@@ -11,7 +11,6 @@
 		<script src="javascripts/checkout.js"></script>
 		<script src="javascripts/timelines.js"></script>
 		<script src="javascripts/csvread.js"></script>
-		<script src="javascripts/loadjscssfile.js"></script>
 		
 		<link rel="stylesheet" href="stylesheets/normalize.css">
 		<link rel="stylesheet" href="stylesheets/style.css">
@@ -26,9 +25,18 @@
 		
 		<script src="snippets\localfile.js"></script>
 	
-		<form id="myForm" style="display:inline-block">
-			Local file: <input type="file" onchange="previewFile()" accept=".csv"><br><br>
+		<form id="CSVForm" style="display:inline-block">
+			<input id="CSVfile" type="file" onchange="getCSVFile()" accept=".csv" style="display:none;">
 		</form>
+		<button id="CSVbutton" onClick="document.querySelector('#CSVfile').click()">Select CSV file</button>
+		<span id="CSVfilename">No CSV file selected</span>
+		<br>
+		<form id="CSSForm" style="display:inline-block">
+			<input id="CSSfile" type="file" onchange="getCSSFile()" accept=".css" style="display:none;">
+		</form>
+		<button id="CSSbutton" onClick="document.querySelector('#CSSfile').click()">Select CSS file</button>
+		<span id="CSSfilename">No CSS file selected</span>
+		<br>
 		
 		<script src="snippets\spfile.js"></script>
 		<script>
