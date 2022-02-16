@@ -1,5 +1,5 @@
-function previewFile(){
-	const [file] = document.querySelector('input[type=file]').files;
+function getCSVFile(){
+	const [file] = document.querySelector('#CSVfile').files;
 	const reader = new FileReader();
 
 	reader.addEventListener("load", () => {
@@ -13,7 +13,26 @@ function previewFile(){
 	}, false);
 
 	if (file) {
+		document.querySelector('#CSVfilename').innerHTML = file.name;
 		reader.readAsText(file);
-		loadjscssfile(file.name.split('.')[0] + ".css", "css");
 	}
+}
+
+function getCSSFile() {
+	const [file] = document.querySelector('#CSSfile').files;
+	const reader = new FileReader();
+	
+	reader.addEventListener("load", () => {
+		var text = reader.result;
+		const style = document.createElement('style');
+		console.log(style);
+		style.innerHTML = text;
+		document.head.appendChild(style);
+	}, false);
+	
+	if (file) {
+		document.querySelector('#CSSfilename').innerHTML = file.name;
+		reader.readAsText(file);	
+	}
+	
 }
