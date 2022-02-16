@@ -1,0 +1,42 @@
+.timelines .scale section {
+    width: 39px;
+}
+.timelines .scale section-label {
+    width: 39px;
+}	  
+.timelines.color-scheme-default .bubble-WS1 {
+	background-color: #64A70B;
+}
+.timelines.color-scheme-default .bubble-WS2 {
+    background-color: #1C9CC8;
+}
+.timelines.color-scheme-default .bubble-WS3 {
+	background-color: #FFC600;
+}
+.timelines.color-scheme-default .bubble-WS4 {
+	background-color: #C6007E;
+}
+.timelines.color-scheme-default .bubble-WS5 {
+	background-color: #AC4FC6;
+}
+.timelines.color-scheme-default .bubble-WS6 {
+	background-color: #C00000;
+}
+.timelines.color-scheme-default .label-WS1 {
+	color: RGBA(250, 250, 250, 1);
+}
+.timelines.color-scheme-default .label-WS2 {
+	color: RGBA(250, 250, 250, 1);
+}
+.timelines.color-scheme-default .label-WS3 {
+    color: RGBA(0, 0, 0, 1);
+}
+.timelines.color-scheme-default .label-WS4 {
+    color: RGBA(250, 250, 250, 1);
+}
+.timelines.color-scheme-default .label-WS5 {
+    color: RGBA(250, 250, 250, 1);
+}
+.timelines.color-scheme-default .label-WS6 {
+	color: RGBA(250, 250, 250, 1);
+}
