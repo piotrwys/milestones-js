@@ -1,0 +1,102 @@
+.timelines {
+	margin: 0 auto;
+}
+
+.timelines {
+	border-top: 1px solid rgba(60, 60, 60, 0.3);
+	background-color: #fbfbfb;
+	position: relative;
+}
+.timelines.color-scheme-default .bubble-default {
+	background-color: RGBA(252, 70, 74, 1);
+}
+.timelines.color-scheme-alternative .bubble-default {
+    background-color: #f3552e;
+}
+.timelines.color-scheme-default .label-default {
+    color: #111111;
+}
+  .timelines .scale {
+	height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    float: left; }
+    .timelines .scale section {
+	  float: left;
+	  width: 59px;
+      border-left: 1px dashed rgba(50, 50, 50, 0.1);
+	  color: rgba(250, 250, 250, 0.8);
+	  text-align: center;
+      font-family: 'Signika Negative';
+      font-size: 10px;
+      line-height: 20px;
+      font-weight: 300;
+      height: 100%; }
+	.timelines .scale section-label {
+	  background-color: rgba(99, 81, 61, .5); 
+	  float: left;
+      width: 59px;}	  
+  .timelines .data {
+    margin: 28px 0 0 0;
+    padding: 0;
+    list-style-type: none;
+    color: rgba(250, 250, 250, 0.8);
+    font-family: 'Signika Negative';
+    font-size: 8px;
+    overflow: hidden; }
+    .timelines .data li {
+      margin: 0 0 3px 0;
+      line-height: 22px;
+      height: 21px;
+      display: block;
+      cursor: pointer;
+      clear: both;
+      position: relative;
+      white-space: nowrap; }
+      .timelines .data li:hover .bubble {
+        opacity: 1; }
+      .timelines .data li .date {
+        color: #797979;
+        font-size: 8px; }
+      .timelines .data li .label {
+		text-align: center;
+		display: block;
+        font-weight: lighter;
+        font-size: 9px;
+        padding-left: 0px;
+        line-height: 14px;
+        white-space: normal; 
+		overflow-wrap: break-word;}
+      .timelines .data li .label-star {
+        text-align: left;
+		display: block;
+		font-weight: lighter;
+        font-size: 9px;
+        padding-left: 5px;
+        line-height: 14px;
+        color: #111111;
+        white-space: nowrap; }		
+      .timelines .data li .bubble {
+        display: block;
+		text-decoration: none;
+        float: left;
+        position: absolute;
+        top: 0px;
+        border-radius: 8px;
+        margin: 0 0 0 0;
+        opacity: 0.8; }
+	  .timelines .data li .star {
+		display: block;
+        float: left;
+        position: relative;
+        top: 0px;
+        margin: 0 0 0 0;
+        opacity: 0.8; }
+	  .timelines .data li .checkout {
+		display: block;
+        float: right;
+        position: relative;
+        top: 0px;
+        margin: 0 0 0 0;
+        opacity: .8; }

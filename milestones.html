@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Project plan</title>
+		
+		<meta charset = "utf-8">
+		
+		<script src="javascripts/lib.js"></script>
+		<script src="javascripts/period.js"></script>
+		<script src="javascripts/star.js"></script>
+		<script src="javascripts/checkout.js"></script>
+		<script src="javascripts/timelines.js"></script>
+		<script src="javascripts/csvread.js"></script>
+		<script src="javascripts/loadjscssfile.js"></script>
+		
+		<link rel="stylesheet" href="stylesheets/normalize.css">
+		<link rel="stylesheet" href="stylesheets/style.css">
+		<link rel="stylesheet" href="stylesheets/timelines.css">
+		
+		<link rel="stylesheet" href="https://fonts.jimstatic.com/css?family=Oxygen+Mono:400,600,800">
+		<link rel="stylesheet" href="https://fonts.jimstatic.com/css?family=Open+Sans:400,600,800">
+		<link rel="stylesheet" href="https://fonts.jimstatic.com/css?family=Signika+Negative:300,400,600,700">
+		
+	</head>
+	<body style="text-align:center">
+		
+		<script src="snippets\localfile.js"></script>
+	
+		<form id="myForm" style="display:inline-block">
+			Local file: <input type="file" onchange="previewFile()" accept=".csv"><br><br>
+		</form>
+		
+		<script src="snippets\spfile.js"></script>
+		<script>
+		const fullpath = window.location.pathname;
+		const path = fullpath.substring(0, fullpath.lastIndexOf('/'));
+		const queryString = window.location.search;
+		const urlParams = new URLSearchParams(queryString);
+		const fileName = urlParams.get('file')
+		if (fileName != null) {
+			spFileLoad(path + '/' + fileName);
+		}
+		</script>
+		
+		
+		<div id="timelines"></div>
+		
+	</body>
+</html>
